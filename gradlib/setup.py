@@ -33,7 +33,7 @@ this_dir = os.path.dirname(os.path.abspath(__file__))
 #           'UTF-8').split('\n')
 # gpus = list(set([re.search('(gfx94.)', g).group(0)
 #            for g in gpus if 'gfx94' in g]))
-gpus = ["gfx90a", "gfx940", "gfx941", "gfx942"]
+gpus = ["gfx908", "gfx90a", "gfx940", "gfx941", "gfx942"]
 # gpus = ['gfx90a','gfx940']
 extra_args = ["--offload-arch=" + g for g in gpus]
 
